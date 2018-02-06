@@ -5,6 +5,12 @@ PicoFeed was originally developed for [Miniflux](http://miniflux.net), a minimal
 
 [![Build Status](https://travis-ci.org/aaronpk/picoFeed.svg?branch=master)](https://travis-ci.org/aaronpk/picoFeed)
 
+This fork of PicoFeed was created after the original author dropped support. It is published on Packagist as `p3k/picofeed`.
+
+```
+composer require p3k/picofeed
+```
+
 Features
 --------
 
