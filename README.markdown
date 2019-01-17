@@ -3,7 +3,7 @@ PicoFeed
 
 PicoFeed was originally developed for [Miniflux](http://miniflux.net), a minimalist and open source news reader.
 
-[![Build Status](https://travis-ci.org/aaronpk/picoFeed.svg?branch=master)](https://travis-ci.org/aaronpk/picoFeed)
+[![Build Status](https://travis-ci.org/aaronpk/picoFeed.svg?branch=master)](https://travis-ci.org/aaronpk/picofeed)
 
 This fork of PicoFeed was created after the original author dropped support. It is published on Packagist as `p3k/picofeed`.
 
@@ -50,6 +50,8 @@ Real world usage
 
 - [Miniflux](http://miniflux.net)
 - [Owncloud News](https://github.com/owncloud/news)
+- [XRay](https://github.com/aaronpk/xray)
+- [Aperture](https://aperture.p3k.io)
 
 Documentation
 -------------
