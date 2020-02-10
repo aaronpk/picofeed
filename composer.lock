@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "9460aab4cad35a361dd5918a41f9247b",
@@ -645,7 +645,6 @@
                 "mock",
                 "xunit"
             ],
-            "abandoned": true,
             "time": "2015-10-02T06:51:40+00:00"
         },
         {
