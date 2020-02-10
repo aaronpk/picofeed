@@ -17,7 +17,7 @@ use Laminas\Xml\Security;
  */
 class XmlParser
 {
-    protected $errors = [];
+    protected static $errors = [];
 
     /**
      * Get a SimpleXmlElement instance or return false.
@@ -97,9 +97,9 @@ class XmlParser
             $dom->loadHTML($input);
         }
 
-        $this->errors = [];
+        self::$errors = [];
         foreach (libxml_get_errors() as $error) {
-            $errors[] = sprintf('XML error: %s (Line: %d - Column: %d - Code: %d)',
+            self::$errors[] = sprintf('XML error: %s (Line: %d - Column: %d - Code: %d)',
                 $error->message,
                 $error->line,
                 $error->column,
@@ -135,7 +135,7 @@ class XmlParser
      */
     public static function getErrors()
     {
-        return implode(', ', $this->errors);
+        return implode(', ', self::$errors);
     }
 
     /**
