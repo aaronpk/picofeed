@@ -17,6 +17,8 @@ use ZendXml\Security;
  */
 class XmlParser
 {
+    protected $errors = [];
+
     /**
      * Get a SimpleXmlElement instance or return false.
      *
@@ -95,6 +97,18 @@ class XmlParser
             $dom->loadHTML($input);
         }
 
+        $this->errors = [];
+        foreach (libxml_get_errors() as $error) {
+            $errors[] = sprintf('XML error: %s (Line: %d - Column: %d - Code: %d)',
+                $error->message,
+                $error->line,
+                $error->column,
+                $error->code
+            );
+        }
+
+        libxml_use_internal_errors(false);
+
         return $dom;
     }
 
@@ -121,18 +135,7 @@ class XmlParser
      */
     public static function getErrors()
     {
-        $errors = array();
-
-        foreach (libxml_get_errors() as $error) {
-            $errors[] = sprintf('XML error: %s (Line: %d - Column: %d - Code: %d)',
-                $error->message,
-                $error->line,
-                $error->column,
-                $error->code
-            );
-        }
-
-        return implode(', ', $errors);
+        return implode(', ', $this->errors);
     }
 
     /**
