@@ -24,7 +24,7 @@ class StreamTest extends PHPUnit_Framework_TestCase
     public function testDownload()
     {
         $client = new Stream();
-        $client->setUrl('https://github.com/miniflux/picoFeed');
+        $client->setUrl('https://github.com/aaronpk/picoFeed');
         $result = $client->doRequest();
 
         $this->assertEquals(200, $result['status']);
@@ -40,11 +40,11 @@ class StreamTest extends PHPUnit_Framework_TestCase
     public function testPassthrough()
     {
         $client = new Stream();
-        $client->setUrl('http://miniflux.net/favicon.ico');
+        $client->setUrl('https://indieweb.org/favicon.ico');
         $client->enablePassthroughMode();
         $client->doRequest();
 
-        $this->expectOutputString(file_get_contents('tests/fixtures/miniflux_favicon.ico'));
+        $this->expectOutputString(file_get_contents('tests/fixtures/indieweb_favicon.ico'));
     }
 
     /**
@@ -65,7 +65,7 @@ class StreamTest extends PHPUnit_Framework_TestCase
     {
         if (function_exists('gzdecode')) {
             $client = new Stream();
-            $client->setUrl('https://github.com/miniflux/picoFeed');
+            $client->setUrl('https://github.com/aaronpk/picoFeed');
             $result = $client->doRequest();
 
             $this->assertEquals('gzip', $result['headers']['Content-Encoding']);
