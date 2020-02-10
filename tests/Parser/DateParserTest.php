@@ -44,6 +44,6 @@ class DateParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($parser->getCurrentDateTime(), $parser->getDateTime('Sat, 11 00:00:01 GMT'));
         $this->assertEquals(1370631743, $parser->getDateTime('Fri Jun 07 2013 19:02:23 GMT+0000 (UTC)')->getTimestamp(), '', 1);
         $this->assertEquals(1377412225, $parser->getDateTime('25/08/2013 06:30:25 م')->getTimestamp(), '', 1);
-        $this->assertEquals($parser->getCurrentDateTime(), $parser->getDateTime('+0400'));
+        $this->assertEquals(($parser->getCurrentDateTime())->format('Y-m-d H:i:s'), $parser->getDateTime('+0400')->format('Y-m-d H:i:s'));
     }
 }
