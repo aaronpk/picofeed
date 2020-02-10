@@ -16,7 +16,7 @@
         "ext-xml": "*",
         "ext-libxml": "*",
         "ext-SimpleXML": "*",
-        "zendframework/zendxml": "^1.0"
+        "laminas/laminas-xml": "^1.2"
     },
     "require-dev" : {
         "phpdocumentor/reflection-docblock": "2.0.4",
@@ -33,3 +33,4 @@
         "picofeed"
     ]
 }
+z
