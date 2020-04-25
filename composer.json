@@ -9,6 +9,9 @@
             "name": "Frédéric Guillot"
         }
     ],
+    "replace": {
+        "miniflux/picofeed": "0.1.35"
+    },
     "require": {
         "php": ">=5.3.0",
         "ext-iconv": "*",
