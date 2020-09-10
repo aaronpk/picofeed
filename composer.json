@@ -13,7 +13,7 @@
         "miniflux/picofeed": "0.1.35"
     },
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=7.2",
         "ext-iconv": "*",
         "ext-dom": "*",
         "ext-xml": "*",
@@ -22,15 +22,18 @@
         "laminas/laminas-xml": "^1.2"
     },
     "require-dev" : {
-        "phpdocumentor/reflection-docblock": "2.0.4",
-        "symfony/yaml": "2.8.7",
-        "phpunit/phpunit" : "4.8.26"
+        "phpdocumentor/reflection-docblock": "^2.0.4",
+        "symfony/yaml": "^2.8.7",
+        "phpunit/phpunit" : "^8.5"
     },
     "suggest": {
         "ext-curl": "PicoFeed will use cURL if present"
     },
     "autoload": {
-        "psr-0": {"PicoFeed": "lib/"}
+        "psr-4": {"PicoFeed\\": "lib/PicoFeed"}
+    },
+    "autoload-dev": {
+        "psr-4": {"PicoFeed\\": "tests/"}
     },
     "bin" : [
         "picofeed"

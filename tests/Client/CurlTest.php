@@ -2,9 +2,9 @@
 
 namespace PicoFeed\Client;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class CurlTest extends PHPUnit_Framework_TestCase
+class CurlTest extends TestCase
 {
     /**
      * @group online
@@ -36,21 +36,19 @@ class CurlTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \PicoFeed\Client\InvalidCertificateException
      * @group online
      */
     public function testSSL()
     {
+        $this->expectException(InvalidCertificateException::class);
         $client = new Curl();
         $client->setUrl('https://www.mjvmobile.com.br');
         $client->doRequest();
     }
 
-    /**
-     * @expectedException \PicoFeed\Client\InvalidUrlException
-     */
     public function testBadUrl()
     {
+        $this->expectException(InvalidUrlException::class);
         $client = new Curl();
         $client->setUrl('http://12345gfgfgf');
         $client->doRequest();

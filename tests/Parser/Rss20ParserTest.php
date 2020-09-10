@@ -2,15 +2,13 @@
 
 namespace PicoFeed\Parser;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class Rss20ParserTest extends PHPUnit_Framework_TestCase
+class Rss20ParserTest extends TestCase
 {
-    /**
-     * @expectedException PicoFeed\Parser\MalformedXmlException
-     */
     public function testBadInput()
     {
+        $this->expectException(MalformedXmlException::class);
         $parser = new Rss20('boo');
         $parser->execute();
     }
