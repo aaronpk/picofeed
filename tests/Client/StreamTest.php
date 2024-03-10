@@ -2,9 +2,9 @@
 
 namespace PicoFeed\Client;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class StreamTest extends PHPUnit_Framework_TestCase
+class StreamTest extends TestCase
 {
     /**
      * @group online
@@ -47,11 +47,9 @@ class StreamTest extends PHPUnit_Framework_TestCase
         $this->expectOutputString(file_get_contents('tests/fixtures/indieweb_favicon.ico'));
     }
 
-    /**
-     * @expectedException \PicoFeed\Client\InvalidUrlException
-     */
     public function testBadUrl()
     {
+        $this->expectException(InvalidUrlException::class);
         $client = new Stream();
         $client->setUrl('http://12345gfgfgf');
         $client->setTimeout(1);

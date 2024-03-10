@@ -3,9 +3,9 @@
 namespace PicoFeed\Parser;
 
 use DOMDocument;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class XmlParserTest extends PHPUnit_Framework_TestCase
+class XmlParserTest extends TestCase
 {
     public function testEmpty()
     {
@@ -88,11 +88,9 @@ class XmlParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('', XmlParser::getEncodingFromXmlTag("<?xml version='1.0'?><?xml-stylesheet"));
     }
 
-    /**
-     * @expectedException PicoFeed\Parser\XmlEntityException
-     */
     public function testScanForXEE()
     {
+        $this->expectException(XmlEntityException::class);
         $xml = <<<XML
 <?xml version="1.0"?>
 <!DOCTYPE results [<!ENTITY harmless "completely harmless">]>
@@ -104,11 +102,9 @@ XML;
         XmlParser::getDomDocument($xml);
     }
 
-    /**
-     * @expectedException PicoFeed\Parser\XmlEntityException
-     */
     public function testScanForXXE()
     {
+        $this->expectException(XmlEntityException::class);
         $xml = <<<XML
 <?xml version="1.0"?>
 <!DOCTYPE root
