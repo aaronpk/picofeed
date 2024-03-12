@@ -28,10 +28,15 @@ class CurlTest extends \PHPUnit\Framework\TestCase
     {
         $client = new Curl();
         $client->setUrl('https://miniflux.net/favicon.ico');
+
+        ob_start();
         $client->enablePassthroughMode();
         $client->doRequest();
 
-        $this->expectOutputString(file_get_contents('tests/fixtures/miniflux_favicon.ico'));
+        $str = ob_get_contents();
+        ob_end_clean();
+
+        $this->assertEquals($str, file_get_contents('tests/fixtures/miniflux_favicon.ico'));
     }
 
     /**
