@@ -35,21 +35,20 @@ class CurlTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @expectedException \PicoFeed\Client\InvalidCertificateException
      * @group online
      */
     public function testSSL()
     {
         $client = new Curl();
+        $this->expectException(\PicoFeed\Client\InvalidCertificateException::class);
         $client->setUrl('https://www.mjvmobile.com.br');
         $client->doRequest();
     }
 
-    /**
-     * @expectedException \PicoFeed\Client\InvalidUrlException
-     */
+
     public function testBadUrl()
     {
+        $this->expectException(\PicoFeed\Client\InvalidUrlException::class);
         $client = new Curl();
         $client->setUrl('http://12345gfgfgf');
         $client->doRequest();

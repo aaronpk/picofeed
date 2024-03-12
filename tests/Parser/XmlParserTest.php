@@ -88,9 +88,7 @@ class XmlParserTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals('', XmlParser::getEncodingFromXmlTag("<?xml version='1.0'?><?xml-stylesheet"));
     }
 
-    /**
-     * @expectedException PicoFeed\Parser\XmlEntityException
-     */
+
     public function testScanForXEE()
     {
         $xml = <<<XML
@@ -101,12 +99,11 @@ class XmlParserTest extends \PHPUnit\Framework\TestCase
 </results>
 XML;
 
+        $this->expectException(\PicoFeed\Parser\XmlEntityException::class);
         XmlParser::getDomDocument($xml);
     }
 
-    /**
-     * @expectedException PicoFeed\Parser\XmlEntityException
-     */
+
     public function testScanForXXE()
     {
         $xml = <<<XML
@@ -119,7 +116,7 @@ XML;
     <result>&foo;</result>
 </results>
 XML;
-
+        $this->expectException(\PicoFeed\Parser\XmlEntityException::class);
         XmlParser::getDomDocument($xml);
     }
 
