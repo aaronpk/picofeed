@@ -418,7 +418,7 @@ abstract class Client
      * Set the url.
      *
      * @param  $url
-     * @return string
+     * @return self
      */
     public function setUrl($url)
     {
