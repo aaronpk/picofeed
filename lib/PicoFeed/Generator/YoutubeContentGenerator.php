@@ -38,10 +38,21 @@ class YoutubeContentGenerator extends Base implements ContentGeneratorInterface
      */
     private function generateHtmlFromXml(Item $item)
     {
+        $content = '';
+
+        $description = $item->getTag('media:description');
+        if (!empty($description[0])) {
+            $content = $description[0];
+        }
+
         $videoId = $item->getTag('yt:videoId');
 
         if (! empty($videoId)) {
-            $item->setContent('<iframe width="560" height="315" src="//www.youtube.com/embed/'.$videoId[0].'" frameborder="0"></iframe>');
+            $content .= '<p>' . '<iframe width="560" height="315" src="//www.youtube.com/embed/'.$videoId[0].'" frameborder="0"></iframe>' . '</p>';
+        }
+
+        if (!empty($content)) {
+            $item->setContent($content);
             return true;
         }
 
