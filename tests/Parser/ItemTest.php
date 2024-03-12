@@ -2,9 +2,8 @@
 
 namespace PicoFeed\Parser;
 
-use PHPUnit_Framework_TestCase;
 
-class ItemTest extends PHPUnit_Framework_TestCase
+class ItemTest extends \PHPUnit\Framework\TestCase
 {
     public function testLangRTL()
     {

@@ -2,9 +2,8 @@
 
 namespace PicoFeed\Scraper;
 
-use PHPUnit_Framework_TestCase;
 
-class RulesTest extends PHPUnit_Framework_TestCase
+class RulesTest extends \PHPUnit\Framework\TestCase
 {
     public function testThatRulesAreValid()
     {

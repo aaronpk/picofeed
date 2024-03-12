@@ -2,9 +2,8 @@
 
 namespace PicoFeed\Serialization;
 
-use PHPUnit_Framework_TestCase;
 
-class SubscriptionListBuilderTest extends PHPUnit_Framework_TestCase
+class SubscriptionListBuilderTest extends \PHPUnit\Framework\TestCase
 {
     public function testWithoutTitle()
     {
