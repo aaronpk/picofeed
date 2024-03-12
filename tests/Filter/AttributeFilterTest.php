@@ -2,11 +2,10 @@
 
 namespace PicoFeed\Filter;
 
-use PHPUnit_Framework_TestCase;
 use PicoFeed\Client\Url;
 use PicoFeed\Config\Config;
 
-class AttributeFilterTest extends PHPUnit_Framework_TestCase
+class AttributeFilterTest extends \PHPUnit\Framework\TestCase
 {
     public function testFilterAllowedAttribute()
     {

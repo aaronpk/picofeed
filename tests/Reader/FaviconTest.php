@@ -2,9 +2,8 @@
 
 namespace PicoFeed\Reader;
 
-use PHPUnit_Framework_TestCase;
 
-class FaviconTest extends PHPUnit_Framework_TestCase
+class FaviconTest extends \PHPUnit\Framework\TestCase
 {
     public function testExtract()
     {

@@ -2,10 +2,9 @@
 
 namespace PicoFeed\Filter;
 
-use PHPUnit_Framework_TestCase;
 use PicoFeed\Config\Config;
 
-class TagFilterTest extends PHPUnit_Framework_TestCase
+class TagFilterTest extends \PHPUnit\Framework\TestCase
 {
     public function testAllowedTag()
     {

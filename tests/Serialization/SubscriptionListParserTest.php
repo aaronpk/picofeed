@@ -2,9 +2,8 @@
 
 namespace PicoFeed\Serialization;
 
-use PHPUnit_Framework_TestCase;
 
-class SubscriptionListParserTest extends PHPUnit_Framework_TestCase
+class SubscriptionListParserTest extends \PHPUnit\Framework\TestCase
 {
     public function testMalFormedFormat()
     {
