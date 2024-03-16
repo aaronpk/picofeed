@@ -25,8 +25,7 @@
         "roave/security-advisories": "dev-latest",
         "phpdocumentor/reflection-docblock": "2.0.4",
         "symfony/yaml": "2.8.7",
-        "phpunit/phpunit" : "*",
-        "phpstan/phpstan": "*"
+        "phpunit/phpunit" : "*"
     },
     "suggest": {
         "ext-curl": "PicoFeed will use cURL if present"

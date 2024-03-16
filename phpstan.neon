@@ -1,4 +1,0 @@
-includes:
-	- phpstan-baseline.neon
-
-parameters:

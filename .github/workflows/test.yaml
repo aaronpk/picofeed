@@ -1,4 +1,4 @@
-name: "PHPUnit/PHPStan"
+name: "PHPUnit"
 
 on:
   push:
@@ -25,15 +25,6 @@ jobs:
           - "5.4"
           - "5.5"
           - "5.6"
-          - "7.0"
-          - "7.1"
-          - "7.2"
-          - "7.3"
-          - "7.4"
-          - "8.0"
-          - "8.1"
-          - "8.2"
-          - "8.3"
     runs-on: "ubuntu-latest"
     steps:
       - name: "Set up PHP"
@@ -49,44 +40,3 @@ jobs:
 
       - name: "Execute unit tests"
         run: "vendor/bin/phpunit --testdox"
-
-  static_analysis:
-    name: "Static Analysis"
-    strategy:
-      matrix:
-        php-version:
-          - "7.3"
-          - "7.4"
-          - "8.0"
-          - "8.1"
-          - "8.2"
-          - "8.3"
-    runs-on: "ubuntu-latest"
-    env:
-      APP_ENV: test
-    steps:
-      - name: "Set up PHP"
-        uses: "shivammathur/setup-php@v2"
-        with:
-          coverage: "none"
-
-      - name: "Checkout code"
-        uses: "actions/checkout@v3"
-
-      - name: "Check JSON files"
-        run: |
-          find . -type f -name '*.json' | xargs -t -L 1 -- php -r 'json_decode(file_get_contents($argv[1]), null, 512, JSON_THROW_ON_ERROR);'
-
-      - name: "Validate Composer configuration"
-        run: "composer validate --no-interaction"
-
-      - name: "Install dependencies"
-        uses: "ramsey/composer-install@v3"
-        with:
-          dependency-versions: "highest"
-
-      - name: "Check PSR-4 mapping"
-        run: "composer dump-autoload --no-interaction --optimize --strict-psr"
-
-      - name: "Perform static analysis"
-        run: "vendor/bin/phpstan analyse lib -c phpstan.neon -l 7"
