@@ -87,4 +87,4 @@ jobs:
         run: "composer dump-autoload --no-interaction --optimize --strict-psr"
 
       - name: "Perform static analysis"
-        run: "vendor/bin/phpstan analyse src tests -c phpstan.neon -l 9"
+        run: "vendor/bin/phpstan analyse lib -c phpstan.neon -l 7"

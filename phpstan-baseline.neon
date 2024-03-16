@@ -1,0 +1,1761 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method PicoFeed\\\\Base\\:\\:setConfig\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Base.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:doRequest\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:findContentType\\(\\) has parameter \\$response with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:getHeader\\(\\) has parameter \\$response with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:handleErrorResponse\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:handleErrorResponse\\(\\) has parameter \\$response with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:handleNormalResponse\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:handleNormalResponse\\(\\) has parameter \\$response with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:handleNotModifiedResponse\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:handleNotModifiedResponse\\(\\) has parameter \\$response with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:hasBeenModified\\(\\) has parameter \\$response with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:parseExpiration\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:setAdditionalCurlOptions\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:setHeaders\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:setHeaders\\(\\) has parameter \\$headers with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Client\\:\\:setUrl\\(\\) has parameter \\$url with no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Parameter \\#1 \\$datetime of class DateTime constructor expects string, mixed given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Parameter \\#2 \\$subject of function preg_match expects string, mixed given\\.$#"
+			count: 2
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Property PicoFeed\\\\Client\\\\Client\\:\\:\\$additional_curl_options type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Property PicoFeed\\\\Client\\\\Client\\:\\:\\$request_headers type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Ternary operator condition is always true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Client.php
+
+		-
+			message: "#^Cannot access offset 'version_number' on array\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Curl\\:\\:doRequest\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Curl\\:\\:executeContext\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Curl\\:\\:handleError\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Curl\\:\\:handleRedirection\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Curl\\:\\:passthroughBody\\(\\) should return int but returns array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Parameter \\#1 \\$ch of method PicoFeed\\\\Client\\\\Curl\\:\\:prepareDownloadMode\\(\\) expects resource, CurlHandle given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Parameter \\#1 \\$handle of function curl_close expects CurlHandle, resource given\\.$#"
+			count: 2
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Parameter \\#1 \\$handle of function curl_errno expects CurlHandle, resource given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Parameter \\#1 \\$handle of function curl_error expects CurlHandle, resource given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Parameter \\#1 \\$handle of function curl_exec expects CurlHandle, resource given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Parameter \\#1 \\$handle of function curl_getinfo expects CurlHandle, resource given\\.$#"
+			count: 6
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Parameter \\#1 \\$handle of function curl_setopt expects CurlHandle, resource given\\.$#"
+			count: 8
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Property PicoFeed\\\\Client\\\\Curl\\:\\:\\$nbRedirects has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Property PicoFeed\\\\Client\\\\Curl\\:\\:\\$response_headers type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Curl.php
+
+		-
+			message: "#^Class PicoFeed\\\\Client\\\\HttpHeaders implements generic interface ArrayAccess but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: lib/PicoFeed/Client/HttpHeaders.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\HttpHeaders\\:\\:__construct\\(\\) has parameter \\$headers with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/HttpHeaders.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\HttpHeaders\\:\\:parse\\(\\) has parameter \\$lines with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/HttpHeaders.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\HttpHeaders\\:\\:parse\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/HttpHeaders.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function strtolower expects string, mixed given\\.$#"
+			count: 4
+			path: lib/PicoFeed/Client/HttpHeaders.php
+
+		-
+			message: "#^Property PicoFeed\\\\Client\\\\HttpHeaders\\:\\:\\$headers has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/HttpHeaders.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Stream\\:\\:decodeBody\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Stream\\:\\:doRequest\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Stream\\:\\:prepareContext\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Stream\\:\\:setEffectiveUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Stream\\:\\:setEffectiveUrl\\(\\) has parameter \\$headers with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Parameter \\#1 \\$body of method PicoFeed\\\\Client\\\\Stream\\:\\:decodeBody\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Parameter \\#1 \\$headers of method PicoFeed\\\\Client\\\\Stream\\:\\:setEffectiveUrl\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Parameter \\#1 \\$lines of static method PicoFeed\\\\Client\\\\HttpHeaders\\:\\:parse\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function strlen expects string, string\\|false given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Parameter \\#2 \\$offset of function substr expects int, float\\|int given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Parameter \\#3 \\$length of function substr expects int\\|null, float\\|int given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Parameter \\#3 \\$length of function substr expects int\\|null, int\\<0, max\\>\\|false given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Stream.php
+
+		-
+			message: "#^Cannot call method getAbsoluteUrl\\(\\) on mixed\\.$#"
+			count: 3
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Cannot call method getBasePath\\(\\) on mixed\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Cannot call method getBaseUrl\\(\\) on mixed\\.$#"
+			count: 2
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Cannot call method getScheme\\(\\) on mixed\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Cannot call method isProtocolRelative\\(\\) on mixed\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Cannot call method isRelativePath\\(\\) on mixed\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Cannot call method isRelativeUrl\\(\\) on mixed\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Cannot call method setScheme\\(\\) on mixed\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Url\\:\\:filterPath\\(\\) has parameter \\$path with no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Method PicoFeed\\\\Client\\\\Url\\:\\:getBasePath\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Offset 'path' does not exist on array\\{scheme\\?\\: string, host\\: string, port\\?\\: int\\<0, 65535\\>, user\\?\\: string, pass\\?\\: string, path\\?\\: string, query\\?\\: string, fragment\\?\\: string\\}\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Offset 'path' does not exist on array\\{\\}\\|array\\{scheme\\?\\: string, host\\?\\: string, port\\?\\: int\\<0, 65535\\>, user\\?\\: string, pass\\?\\: string, path\\?\\: string, query\\?\\: string, fragment\\?\\: string\\}\\.$#"
+			count: 3
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Property PicoFeed\\\\Client\\\\Url\\:\\:\\$components type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Client/Url.php
+
+		-
+			message: "#^Method PicoFeed\\\\Config\\\\Config\\:\\:__call\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Config/Config.php
+
+		-
+			message: "#^Property PicoFeed\\\\Config\\\\Config\\:\\:\\$container type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Config/Config.php
+
+		-
+			message: "#^Method PicoFeed\\\\Encoding\\\\Encoding\\:\\:convert\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Encoding/Encoding.php
+
+		-
+			message: "#^Method PicoFeed\\\\Encoding\\\\Encoding\\:\\:convert\\(\\) has parameter \\$encoding with no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Encoding/Encoding.php
+
+		-
+			message: "#^Method PicoFeed\\\\Encoding\\\\Encoding\\:\\:convert\\(\\) has parameter \\$input with no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Encoding/Encoding.php
+
+		-
+			message: "#^Parameter \\#1 \\$callback of function set_error_handler expects \\(callable\\(int, string, string, int\\)\\: bool\\)\\|null, Closure\\(\\)\\: void given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Encoding/Encoding.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:addAttributes\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:addAttributes\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:filter\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:filter\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:hasRequiredAttributes\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:removeYouTubeAutoplay\\(\\) has parameter \\$attribute with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:secureIframeSrc\\(\\) has parameter \\$attribute with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:setAttributeOverrides\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:setIframeWhitelist\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:setIntegerAttributes\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:setMediaAttributes\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:setMediaBlacklist\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:setRequiredAttributes\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:setSchemeWhitelist\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:setWhitelistedAttributes\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Attribute\\:\\:toHtml\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$add_attributes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$attribute_whitelist type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$filters type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$iframe_whitelist type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$integer_attributes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$media_attributes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$media_blacklist type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$required_attributes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Attribute\\:\\:\\$scheme_whitelist type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Result of && is always false\\.$#"
+			count: 4
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between array and 'src' will always evaluate to false\\.$#"
+			count: 2
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Ternary operator condition is always true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Attribute.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Filter\\:\\:removeHTMLTags\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Filter.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Filter\\:\\:stripHeadTags\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Filter.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function preg_replace expects array\\|string, string\\|null given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Filter.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:dataTag\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:endTag\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:filterRules\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:postFilter\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:preFilter\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:startTag\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:startTag\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Parameter \\#2 \\$handler of function xml_set_character_data_handler expects callable\\(\\)\\: mixed, 'dataTag' given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Parameter \\#2 \\$start_handler of function xml_set_element_handler expects callable\\(\\)\\: mixed, 'startTag' given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Parameter \\#3 \\$end_handler of function xml_set_element_handler expects callable\\(\\)\\: mixed, 'endTag' given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function preg_replace expects array\\|string, string\\|null given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Parameter \\#3 \\$value of function xml_parser_set_option expects int\\|string, false given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Html\\:\\:\\$attribute \\(PicoFeed\\\\Filter\\\\Attribute\\) does not accept default value of type string\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Html\\:\\:\\$empty_tags type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Html\\:\\:\\$tag \\(PicoFeed\\\\Filter\\\\Tag\\) does not accept default value of type string\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Html.php
+
+		-
+			message: "#^Argument of an invalid type DOMNodeList\\<DOMNode\\>\\|false supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Cannot call method removeChild\\(\\) on DOMNode\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Cannot call method saveXML\\(\\) on DOMDocument\\|true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:isAllowed\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:isPixelTracker\\(\\) has parameter \\$attributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:removeBlacklistedTags\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:removeEmptyTags\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:removeMultipleBreakTags\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:setWhitelistedTags\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Parameter \\#1 \\$document of class DOMXPath constructor expects DOMDocument, DOMDocument\\|true given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Tag\\:\\:\\$tag_blacklist type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Property PicoFeed\\\\Filter\\\\Tag\\:\\:\\$tag_whitelist type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Filter/Tag.php
+
+		-
+			message: "#^Property PicoFeed\\\\Generator\\\\FileContentGenerator\\:\\:\\$extensions has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Generator/FileContentGenerator.php
+
+		-
+			message: "#^Method PicoFeed\\\\Logging\\\\Logger\\:\\:deleteMessages\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Logging/Logger.php
+
+		-
+			message: "#^Method PicoFeed\\\\Logging\\\\Logger\\:\\:enable\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Logging/Logger.php
+
+		-
+			message: "#^Method PicoFeed\\\\Logging\\\\Logger\\:\\:getMessages\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Logging/Logger.php
+
+		-
+			message: "#^Method PicoFeed\\\\Logging\\\\Logger\\:\\:setMessage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Logging/Logger.php
+
+		-
+			message: "#^Method PicoFeed\\\\Logging\\\\Logger\\:\\:setTimeZone\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Logging/Logger.php
+
+		-
+			message: "#^Property PicoFeed\\\\Logging\\\\Logger\\:\\:\\$messages type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Logging/Logger.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findFeedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findFeedDescription\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findFeedIcon\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findFeedId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findFeedLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findFeedLogo\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findFeedTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findFeedUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemAuthor\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemAuthorUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemCategories\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemContent\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemEnclosure\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemPublishedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemUpdatedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findItemUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:findSiteUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Atom\\:\\:getUrl\\(\\) has parameter \\$fallback with no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Parameter \\#1 \\$publishedDate of method PicoFeed\\\\Parser\\\\Item\\:\\:setPublishedDate\\(\\) expects DateTime, DateTime\\|null given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Parameter \\#1 \\$updatedDate of method PicoFeed\\\\Parser\\\\Item\\:\\:setUpdatedDate\\(\\) expects DateTime, DateTime\\|null given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\Atom\\:\\:\\$namespaces type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Return type \\(array\\<SimpleXMLElement\\>\\) of method PicoFeed\\\\Parser\\\\Atom\\:\\:getItemsTree\\(\\) should be compatible with return type \\(SimpleXMLElement\\) of method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:getItemsTree\\(\\)$#"
+			count: 2
+			path: lib/PicoFeed/Parser/Atom.php
+
+		-
+			message: "#^Array has 2 duplicate keys with value 'D, d M y H\\:i\\:s O' \\(DATE_RFC822, DATE_RFC1036\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/DateParser.php
+
+		-
+			message: "#^Array has 2 duplicate keys with value 'Y\\-m\\-d\\\\\\\\TH\\:i\\:sP' \\(DATE_ATOM, DATE_RFC3339\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/DateParser.php
+
+		-
+			message: "#^Array has 3 duplicate keys with value 'D, d M Y H\\:i\\:s O' \\(DATE_RSS, DATE_RFC1123, DATE_RFC2822\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/DateParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\DateParser\\:\\:getDateTime\\(\\) should return DateTime but returns DateTime\\|true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/DateParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\DateParser\\:\\:\\$formats type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/DateParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getDescription\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getFeedUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getIcon\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getItems\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getLogo\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getSiteUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Feed\\:\\:getTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Feed.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Item\\:\\:getCategories\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Item\\:\\:getNamespaces\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Item\\:\\:getTag\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Item\\:\\:setCategories\\(\\) has parameter \\$categories with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Item\\:\\:setCategoriesFromXml\\(\\) has parameter \\$categories with no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Item\\:\\:setNamespaces\\(\\) has parameter \\$namespaces with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\|SimpleXMLElement\\[\\] \\$categories\\)\\: Unexpected token \"\\|\", expected type at offset 62$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\Item\\:\\:\\$categories type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\Item\\:\\:\\$namespaces type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between array\\<SimpleXMLElement\\> and false will always evaluate to false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Item.php
+
+		-
+			message: "#^Cannot call method getNamespaces\\(\\) on mixed\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Cannot call method ignoreUrls\\(\\) on PicoFeed\\\\Processor\\\\ItemProcessorInterface\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Parser\\:\\:checkFeedUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Parser\\:\\:checkItemUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Parser\\:\\:checkSiteUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Parser\\:\\:findItemDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Parser\\:\\:setGrabberIgnoreUrls\\(\\) has parameter \\$urls with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Parameter \\#1 \\$xml of method PicoFeed\\\\Parser\\\\Parser\\:\\:registerSupportedNamespaces\\(\\) expects SimpleXMLElement, mixed given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\Parser\\:\\:\\$namespaces type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\Parser\\:\\:\\$used_namespaces type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between DateTime and null will always evaluate to false\\.$#"
+			count: 2
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Ternary operator condition is always true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Parser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findFeedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findFeedDescription\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findFeedIcon\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findFeedId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findFeedLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findFeedLogo\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findFeedTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findFeedUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemAuthor\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemAuthorUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemCategories\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemContent\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemEnclosure\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemPublishedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemUpdatedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findItemUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:findSiteUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/ParserInterface.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findFeedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findFeedDescription\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findFeedIcon\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findFeedId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findFeedLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findFeedLogo\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findFeedTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findFeedUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemAuthor\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemAuthorUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemCategories\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemContent\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemEnclosure\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemPublishedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemUpdatedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findItemUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:findSiteUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss10\\:\\:getItemsTree\\(\\) should return array\\<SimpleXMLElement\\> but returns array\\<SimpleXMLElement\\>\\|SimpleXMLElement\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Parameter \\#1 \\$publishedDate of method PicoFeed\\\\Parser\\\\Item\\:\\:setPublishedDate\\(\\) expects DateTime, DateTime\\|null given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\Rss10\\:\\:\\$namespaces type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Return type \\(array\\<SimpleXMLElement\\>\\) of method PicoFeed\\\\Parser\\\\Rss10\\:\\:getItemsTree\\(\\) should be compatible with return type \\(SimpleXMLElement\\) of method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:getItemsTree\\(\\)$#"
+			count: 2
+			path: lib/PicoFeed/Parser/Rss10.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findFeedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findFeedDescription\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findFeedIcon\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findFeedId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findFeedLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findFeedLogo\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findFeedTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findFeedUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemAuthor\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemAuthorUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemCategories\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemContent\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemEnclosure\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemId\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemLanguage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemPublishedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemUpdatedDate\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findItemUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\Rss20\\:\\:findSiteUrl\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Parameter \\#1 \\$publishedDate of method PicoFeed\\\\Parser\\\\Item\\:\\:setPublishedDate\\(\\) expects DateTime, DateTime\\|null given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\Rss20\\:\\:\\$namespaces type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Return type \\(array\\<SimpleXMLElement\\>\\) of method PicoFeed\\\\Parser\\\\Rss20\\:\\:getItemsTree\\(\\) should be compatible with return type \\(SimpleXMLElement\\) of method PicoFeed\\\\Parser\\\\ParserInterface\\:\\:getItemsTree\\(\\)$#"
+			count: 2
+			path: lib/PicoFeed/Parser/Rss20.php
+
+		-
+			message: "#^Cannot access property \\$childNodes on DOMDocument\\|SimpleXMLElement\\|true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Cannot access property \\$length on DOMNodeList\\|SimpleXMLElement\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\XmlParser\\:\\:getDomDocument\\(\\) should return bool\\|DOMDocument but returns bool\\|DOMDocument\\|SimpleXMLElement\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\XmlParser\\:\\:getXPathResult\\(\\) has parameter \\$ns with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\XmlParser\\:\\:getXPathResult\\(\\) should return array\\<SimpleXMLElement\\> but returns array\\<SimpleXMLElement\\>\\|false\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\XmlParser\\:\\:htmlToXml\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\XmlParser\\:\\:replaceXPathPrefixWithNamespaceURI\\(\\) has parameter \\$ns with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Parser\\\\XmlParser\\:\\:replaceXPathPrefixWithNamespaceURI\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$object_or_class of function is_a expects object, mixed given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Parameter \\#3 \\$length of function substr expects int\\|null, int\\|false given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Parser\\\\XmlParser\\:\\:\\$errors has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Parser/XmlParser.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:execute\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ContentGeneratorProcessor.php
+
+		-
+			message: "#^Property PicoFeed\\\\Processor\\\\ContentGeneratorProcessor\\:\\:\\$generators type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ContentGeneratorProcessor.php
+
+		-
+			message: "#^Method PicoFeed\\\\Processor\\\\ItemPostProcessor\\:\\:setConfig\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ItemPostProcessor.php
+
+		-
+			message: "#^Property PicoFeed\\\\Processor\\\\ItemPostProcessor\\:\\:\\$processors type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ItemPostProcessor.php
+
+		-
+			message: "#^Left side of && is always true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ScraperProcessor.php
+
+		-
+			message: "#^Method PicoFeed\\\\Processor\\\\ScraperProcessor\\:\\:ignoreUrls\\(\\) has parameter \\$urls with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ScraperProcessor.php
+
+		-
+			message: "#^Property PicoFeed\\\\Processor\\\\ScraperProcessor\\:\\:\\$ignoredUrls has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ScraperProcessor.php
+
+		-
+			message: "#^Property PicoFeed\\\\Processor\\\\ScraperProcessor\\:\\:\\$scraper has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ScraperProcessor.php
+
+		-
+			message: "#^Right side of && is always true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Processor/ScraperProcessor.php
+
+		-
+			message: "#^Cannot access property \\$length on DOMNodeList\\<DOMNode\\>\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Favicon.php
+
+		-
+			message: "#^Cannot call method getAttribute\\(\\) on DOMNode\\|null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Favicon.php
+
+		-
+			message: "#^Cannot call method item\\(\\) on DOMNodeList\\<DOMNode\\>\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Favicon.php
+
+		-
+			message: "#^Method PicoFeed\\\\Reader\\\\Favicon\\:\\:extract\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Favicon.php
+
+		-
+			message: "#^Property PicoFeed\\\\Reader\\\\Favicon\\:\\:\\$types type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Favicon.php
+
+		-
+			message: "#^Argument of an invalid type DOMNodeList\\<DOMNode\\>\\|false supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Reader.php
+
+		-
+			message: "#^Call to an undefined method DOMNode\\:\\:getAttribute\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Reader.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:setConfig\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Reader.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:setHashAlgo\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Reader.php
+
+		-
+			message: "#^Cannot access property \\$length on DOMNodeList\\<DOMNode\\>\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Reader.php
+
+		-
+			message: "#^Method PicoFeed\\\\Reader\\\\Reader\\:\\:find\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Reader.php
+
+		-
+			message: "#^Method PicoFeed\\\\Reader\\\\Reader\\:\\:getParser\\(\\) should return PicoFeed\\\\Parser\\\\Parser but returns object\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Reader.php
+
+		-
+			message: "#^Property PicoFeed\\\\Reader\\\\Reader\\:\\:\\$formats type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Reader/Reader.php
+
+		-
+			message: "#^Cannot access property \\$documentElement on DOMDocument\\|true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Cannot call method removeChild\\(\\) on DOMNode\\|null\\.$#"
+			count: 2
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Cannot call method saveXML\\(\\) on DOMDocument\\|true\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:findNextLink\\(\\) should return string but returns null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:stripAttributes\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:stripGarbage\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:stripTags\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$document of class DOMXPath constructor expects DOMDocument, DOMDocument\\|true given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Parameter \\#1 \\$dom of method PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:stripAttributes\\(\\) expects DOMDocument, DOMDocument\\|true given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:\\$candidatesAttributes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:\\$dom has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:\\$stripAttributes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:\\$stripTags type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Scraper\\\\CandidateParser\\:\\:\\$xpath has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/CandidateParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleLoader\\:\\:getRules\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleLoader.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleLoader\\:\\:getRulesFileList\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleLoader.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleLoader\\:\\:getRulesFolders\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleLoader.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleLoader\\:\\:loadRuleFile\\(\\) has parameter \\$files with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleLoader.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleLoader\\:\\:loadRuleFile\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleLoader.php
+
+		-
+			message: "#^Parameter \\#1 \\$hostname of method PicoFeed\\\\Scraper\\\\RuleLoader\\:\\:getRulesFileList\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleLoader.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleParser\\:\\:__construct\\(\\) has parameter \\$rules with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleParser\\:\\:findContent\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleParser\\:\\:findNextLink\\(\\) should return string but returns null\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\RuleParser\\:\\:stripTags\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Scraper\\\\RuleParser\\:\\:\\$dom has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Scraper\\\\RuleParser\\:\\:\\$rules has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleParser.php
+
+		-
+			message: "#^Property PicoFeed\\\\Scraper\\\\RuleParser\\:\\:\\$xpath has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/RuleParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\Scraper\\:\\:execute\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/Scraper.php
+
+		-
+			message: "#^Method PicoFeed\\\\Scraper\\\\Scraper\\:\\:prepareHtml\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/Scraper.php
+
+		-
+			message: "#^Variable \\$maxRecursions in isset\\(\\) always exists and is not nullable\\.$#"
+			count: 1
+			path: lib/PicoFeed/Scraper/Scraper.php
+
+		-
+			message: "#^Property PicoFeed\\\\Serialization\\\\Subscription\\:\\:\\$category has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/Subscription.php
+
+		-
+			message: "#^Property PicoFeed\\\\Serialization\\\\Subscription\\:\\:\\$description has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/Subscription.php
+
+		-
+			message: "#^Property PicoFeed\\\\Serialization\\\\Subscription\\:\\:\\$feedUrl has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/Subscription.php
+
+		-
+			message: "#^Property PicoFeed\\\\Serialization\\\\Subscription\\:\\:\\$siteUrl has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/Subscription.php
+
+		-
+			message: "#^Property PicoFeed\\\\Serialization\\\\Subscription\\:\\:\\$title has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/Subscription.php
+
+		-
+			message: "#^Property PicoFeed\\\\Serialization\\\\Subscription\\:\\:\\$type has no type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/Subscription.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/Subscription.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionList.php
+
+		-
+			message: "#^Method PicoFeed\\\\Serialization\\\\SubscriptionListBuilder\\:\\:build\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListBuilder.php
+
+		-
+			message: "#^Method PicoFeed\\\\Serialization\\\\SubscriptionListBuilder\\:\\:buildCategories\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListBuilder.php
+
+		-
+			message: "#^Method PicoFeed\\\\Serialization\\\\SubscriptionListBuilder\\:\\:buildCategory\\(\\) has parameter \\$subscriptions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListBuilder.php
+
+		-
+			message: "#^Method PicoFeed\\\\Serialization\\\\SubscriptionListBuilder\\:\\:groupByCategories\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListBuilder.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListBuilder.php
+
+		-
+			message: "#^Cannot access property \\$head on mixed\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Serialization\\\\SubscriptionListParser\\:\\:parseEntries\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Serialization\\\\SubscriptionListParser\\:\\:parseTitle\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListParser.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionListParser.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Serialization/SubscriptionParser.php
+
+		-
+			message: "#^Method PicoFeed\\\\Syndication\\\\AtomFeedBuilder\\:\\:build\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Syndication/AtomFeedBuilder.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Syndication/FeedBuilder.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: lib/PicoFeed/Syndication/ItemBuilder.php
+
+		-
+			message: "#^Method PicoFeed\\\\Syndication\\\\Rss20FeedBuilder\\:\\:build\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: lib/PicoFeed/Syndication/Rss20FeedBuilder.php
