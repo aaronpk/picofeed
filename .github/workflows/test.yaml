@@ -50,7 +50,6 @@ jobs:
           working-directory: "app"
 
       - name: "Execute unit tests"
-        working-directory: "app"
         run: "vendor/bin/phpunit --testdox"
 
   static_analysis:
@@ -81,19 +80,15 @@ jobs:
           find . -type f -name '*.json' | xargs -t -L 1 -- php -r 'json_decode(file_get_contents($argv[1]), null, 512, JSON_THROW_ON_ERROR);'
 
       - name: "Validate Composer configuration"
-        working-directory: "app"
         run: "composer validate --no-interaction"
 
       - name: "Install dependencies"
         uses: "ramsey/composer-install@v3"
         with:
-          working-directory: "app"
           dependency-versions: "highest"
 
       - name: "Check PSR-4 mapping"
-        working-directory: "app"
         run: "composer dump-autoload --no-interaction --optimize --strict-psr"
 
       - name: "Perform static analysis"
-        working-directory: "app"
         run: "vendor/bin/phpstan analyse src tests -c phpstan.neon -l 9"
