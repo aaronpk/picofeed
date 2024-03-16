@@ -36,4 +36,4 @@ jobs:
         uses: "ramsey/composer-install@v3"
 
       - name: "Execute unit tests"
-        run: "vendor/bin/phpunit --testdox"
+        run: "vendor/bin/phpunit --testdox --exclude-group online"
