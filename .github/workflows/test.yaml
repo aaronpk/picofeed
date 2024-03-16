@@ -1,0 +1,98 @@
+name: "PHPUnit/PHPStan"
+
+on:
+  push:
+    branches:
+  pull_request:
+    branches:
+      - "main"
+
+permissions:
+  contents: "read"
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  unit_tests:
+    name: "Unit and functional tests"
+    strategy:
+      #fail-fast: false
+      matrix:
+        php-version:
+          - "5.3"
+          - "5.4"
+          - "5.5"
+          - "5.6"
+          - "7.0"
+          - "7.1"
+          - "7.2"
+          - "7.3"
+          - "7.4"
+          - "8.0"
+          - "8.1"
+          - "8.2"
+          - "8.3"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Set up PHP"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Checkout code"
+        uses: "actions/checkout@v4"
+
+      - name: "Install dependencies"
+        uses: "ramsey/composer-install@v3"
+        with:
+          working-directory: "app"
+
+      - name: "Execute unit tests"
+        working-directory: "app"
+        run: "vendor/bin/phpunit --testdox"
+
+  static_analysis:
+    name: "Static Analysis"
+    matrix:
+      php-version:
+        - "7.3"
+        - "7.4"
+        - "8.0"
+        - "8.1"
+        - "8.2"
+        - "8.3"
+    runs-on: "ubuntu-latest"
+    env:
+      APP_ENV: test
+    steps:
+      - name: "Set up PHP"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          coverage: "none"
+
+      - name: "Checkout code"
+        uses: "actions/checkout@v3"
+
+      - name: "Check JSON files"
+        run: |
+          find . -type f -name '*.json' | xargs -t -L 1 -- php -r 'json_decode(file_get_contents($argv[1]), null, 512, JSON_THROW_ON_ERROR);'
+
+      - name: "Validate Composer configuration"
+        working-directory: "app"
+        run: "composer validate --no-interaction"
+
+      - name: "Install dependencies"
+        uses: "ramsey/composer-install@v3"
+        with:
+          working-directory: "app"
+          dependency-versions: "highest"
+
+      - name: "Check PSR-4 mapping"
+        working-directory: "app"
+        run: "composer dump-autoload --no-interaction --optimize --strict-psr"
+
+      - name: "Perform static analysis"
+        working-directory: "app"
+        run: "vendor/bin/phpstan analyse src tests -c phpstan.neon -l 9"

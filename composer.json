@@ -22,6 +22,7 @@
         "laminas/laminas-xml": "^1.2"
     },
     "require-dev" : {
+        "roave/security-advisories": "dev-latest",
         "phpdocumentor/reflection-docblock": "2.0.4",
         "symfony/yaml": "2.8.7",
         "phpunit/phpunit" : "*"
