@@ -81,16 +81,6 @@ parameters:
 			path: lib/PicoFeed/Client/Client.php
 
 		-
-			message: "#^Parameter \\#1 \\$datetime of class DateTime constructor expects string, mixed given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Client.php
-
-		-
-			message: "#^Parameter \\#2 \\$subject of function preg_match expects string, mixed given\\.$#"
-			count: 2
-			path: lib/PicoFeed/Client/Client.php
-
-		-
 			message: "#^Property PicoFeed\\\\Client\\\\Client\\:\\:\\$additional_curl_options type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: lib/PicoFeed/Client/Client.php
@@ -201,11 +191,6 @@ parameters:
 			path: lib/PicoFeed/Client/HttpHeaders.php
 
 		-
-			message: "#^Parameter \\#1 \\$string of function strtolower expects string, mixed given\\.$#"
-			count: 4
-			path: lib/PicoFeed/Client/HttpHeaders.php
-
-		-
 			message: "#^Property PicoFeed\\\\Client\\\\HttpHeaders\\:\\:\\$headers has no type specified\\.$#"
 			count: 1
 			path: lib/PicoFeed/Client/HttpHeaders.php
@@ -241,16 +226,6 @@ parameters:
 			path: lib/PicoFeed/Client/Stream.php
 
 		-
-			message: "#^Parameter \\#1 \\$headers of method PicoFeed\\\\Client\\\\Stream\\:\\:setEffectiveUrl\\(\\) expects array, mixed given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Stream.php
-
-		-
-			message: "#^Parameter \\#1 \\$lines of static method PicoFeed\\\\Client\\\\HttpHeaders\\:\\:parse\\(\\) expects array, mixed given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Stream.php
-
-		-
 			message: "#^Parameter \\#1 \\$string of function strlen expects string, string\\|false given\\.$#"
 			count: 1
 			path: lib/PicoFeed/Client/Stream.php
@@ -271,52 +246,7 @@ parameters:
 			path: lib/PicoFeed/Client/Stream.php
 
 		-
-			message: "#^Cannot call method getAbsoluteUrl\\(\\) on mixed\\.$#"
-			count: 3
-			path: lib/PicoFeed/Client/Url.php
-
-		-
-			message: "#^Cannot call method getBasePath\\(\\) on mixed\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Url.php
-
-		-
-			message: "#^Cannot call method getBaseUrl\\(\\) on mixed\\.$#"
-			count: 2
-			path: lib/PicoFeed/Client/Url.php
-
-		-
-			message: "#^Cannot call method getScheme\\(\\) on mixed\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Url.php
-
-		-
-			message: "#^Cannot call method isProtocolRelative\\(\\) on mixed\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Url.php
-
-		-
-			message: "#^Cannot call method isRelativePath\\(\\) on mixed\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Url.php
-
-		-
-			message: "#^Cannot call method isRelativeUrl\\(\\) on mixed\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Url.php
-
-		-
-			message: "#^Cannot call method setScheme\\(\\) on mixed\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Url.php
-
-		-
 			message: "#^Method PicoFeed\\\\Client\\\\Url\\:\\:filterPath\\(\\) has parameter \\$path with no type specified\\.$#"
-			count: 1
-			path: lib/PicoFeed/Client/Url.php
-
-		-
-			message: "#^Method PicoFeed\\\\Client\\\\Url\\:\\:getBasePath\\(\\) should return string but returns string\\|null\\.$#"
 			count: 1
 			path: lib/PicoFeed/Client/Url.php
 
@@ -506,32 +436,12 @@ parameters:
 			path: lib/PicoFeed/Filter/Attribute.php
 
 		-
-			message: "#^Method PicoFeed\\\\Filter\\\\Filter\\:\\:removeHTMLTags\\(\\) should return string but returns string\\|null\\.$#"
-			count: 1
-			path: lib/PicoFeed/Filter/Filter.php
-
-		-
-			message: "#^Method PicoFeed\\\\Filter\\\\Filter\\:\\:stripHeadTags\\(\\) should return string but returns string\\|null\\.$#"
-			count: 1
-			path: lib/PicoFeed/Filter/Filter.php
-
-		-
-			message: "#^Parameter \\#3 \\$subject of function preg_replace expects array\\|string, string\\|null given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Filter/Filter.php
-
-		-
 			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:dataTag\\(\\) has no return type specified\\.$#"
 			count: 1
 			path: lib/PicoFeed/Filter/Html.php
 
 		-
 			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:endTag\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: lib/PicoFeed/Filter/Html.php
-
-		-
-			message: "#^Method PicoFeed\\\\Filter\\\\Html\\:\\:filterRules\\(\\) should return string but returns string\\|null\\.$#"
 			count: 1
 			path: lib/PicoFeed/Filter/Html.php
 
@@ -571,11 +481,6 @@ parameters:
 			path: lib/PicoFeed/Filter/Html.php
 
 		-
-			message: "#^Parameter \\#3 \\$subject of function preg_replace expects array\\|string, string\\|null given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Filter/Html.php
-
-		-
 			message: "#^Parameter \\#3 \\$value of function xml_parser_set_option expects int\\|string, false given\\.$#"
 			count: 1
 			path: lib/PicoFeed/Filter/Html.php
@@ -601,11 +506,6 @@ parameters:
 			path: lib/PicoFeed/Filter/Tag.php
 
 		-
-			message: "#^Cannot call method removeChild\\(\\) on DOMNode\\|null\\.$#"
-			count: 1
-			path: lib/PicoFeed/Filter/Tag.php
-
-		-
 			message: "#^Cannot call method saveXML\\(\\) on DOMDocument\\|true\\.$#"
 			count: 1
 			path: lib/PicoFeed/Filter/Tag.php
@@ -622,16 +522,6 @@ parameters:
 
 		-
 			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:removeBlacklistedTags\\(\\) should return string but returns string\\|false\\.$#"
-			count: 1
-			path: lib/PicoFeed/Filter/Tag.php
-
-		-
-			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:removeEmptyTags\\(\\) should return string but returns string\\|null\\.$#"
-			count: 1
-			path: lib/PicoFeed/Filter/Tag.php
-
-		-
-			message: "#^Method PicoFeed\\\\Filter\\\\Tag\\:\\:removeMultipleBreakTags\\(\\) should return string but returns string\\|null\\.$#"
 			count: 1
 			path: lib/PicoFeed/Filter/Tag.php
 
@@ -796,16 +686,6 @@ parameters:
 			path: lib/PicoFeed/Parser/Atom.php
 
 		-
-			message: "#^Parameter \\#1 \\$publishedDate of method PicoFeed\\\\Parser\\\\Item\\:\\:setPublishedDate\\(\\) expects DateTime, DateTime\\|null given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/Atom.php
-
-		-
-			message: "#^Parameter \\#1 \\$updatedDate of method PicoFeed\\\\Parser\\\\Item\\:\\:setUpdatedDate\\(\\) expects DateTime, DateTime\\|null given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/Atom.php
-
-		-
 			message: "#^Property PicoFeed\\\\Parser\\\\Atom\\:\\:\\$namespaces type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: lib/PicoFeed/Parser/Atom.php
@@ -941,12 +821,7 @@ parameters:
 			path: lib/PicoFeed/Parser/Item.php
 
 		-
-			message: "#^Cannot call method getNamespaces\\(\\) on mixed\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/Parser.php
-
-		-
-			message: "#^Cannot call method ignoreUrls\\(\\) on PicoFeed\\\\Processor\\\\ItemProcessorInterface\\|null\\.$#"
+			message: "#^Call to an undefined method PicoFeed\\\\Processor\\\\ItemProcessorInterface\\:\\:ignoreUrls\\(\\)\\.$#"
 			count: 1
 			path: lib/PicoFeed/Parser/Parser.php
 
@@ -972,11 +847,6 @@ parameters:
 
 		-
 			message: "#^Method PicoFeed\\\\Parser\\\\Parser\\:\\:setGrabberIgnoreUrls\\(\\) has parameter \\$urls with no value type specified in iterable type array\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/Parser.php
-
-		-
-			message: "#^Parameter \\#1 \\$xml of method PicoFeed\\\\Parser\\\\Parser\\:\\:registerSupportedNamespaces\\(\\) expects SimpleXMLElement, mixed given\\.$#"
 			count: 1
 			path: lib/PicoFeed/Parser/Parser.php
 
@@ -1206,11 +1076,6 @@ parameters:
 			path: lib/PicoFeed/Parser/Rss10.php
 
 		-
-			message: "#^Parameter \\#1 \\$publishedDate of method PicoFeed\\\\Parser\\\\Item\\:\\:setPublishedDate\\(\\) expects DateTime, DateTime\\|null given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/Rss10.php
-
-		-
 			message: "#^Property PicoFeed\\\\Parser\\\\Rss10\\:\\:\\$namespaces type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: lib/PicoFeed/Parser/Rss10.php
@@ -1321,11 +1186,6 @@ parameters:
 			path: lib/PicoFeed/Parser/Rss20.php
 
 		-
-			message: "#^Parameter \\#1 \\$publishedDate of method PicoFeed\\\\Parser\\\\Item\\:\\:setPublishedDate\\(\\) expects DateTime, DateTime\\|null given\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/Rss20.php
-
-		-
 			message: "#^Property PicoFeed\\\\Parser\\\\Rss20\\:\\:\\$namespaces type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: lib/PicoFeed/Parser/Rss20.php
@@ -1337,11 +1197,6 @@ parameters:
 
 		-
 			message: "#^Cannot access property \\$childNodes on DOMDocument\\|SimpleXMLElement\\|true\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/XmlParser.php
-
-		-
-			message: "#^Cannot access property \\$length on DOMNodeList\\|SimpleXMLElement\\|null\\.$#"
 			count: 1
 			path: lib/PicoFeed/Parser/XmlParser.php
 
@@ -1367,16 +1222,6 @@ parameters:
 
 		-
 			message: "#^Method PicoFeed\\\\Parser\\\\XmlParser\\:\\:replaceXPathPrefixWithNamespaceURI\\(\\) has parameter \\$ns with no value type specified in iterable type array\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/XmlParser.php
-
-		-
-			message: "#^Method PicoFeed\\\\Parser\\\\XmlParser\\:\\:replaceXPathPrefixWithNamespaceURI\\(\\) should return string but returns string\\|null\\.$#"
-			count: 1
-			path: lib/PicoFeed/Parser/XmlParser.php
-
-		-
-			message: "#^Parameter \\#1 \\$object_or_class of function is_a expects object, mixed given\\.$#"
 			count: 1
 			path: lib/PicoFeed/Parser/XmlParser.php
 
@@ -1436,12 +1281,12 @@ parameters:
 			path: lib/PicoFeed/Processor/ScraperProcessor.php
 
 		-
-			message: "#^Cannot access property \\$length on DOMNodeList\\<DOMNode\\>\\|false\\.$#"
+			message: "#^Call to an undefined method DOMNode\\:\\:getAttribute\\(\\)\\.$#"
 			count: 1
 			path: lib/PicoFeed/Reader/Favicon.php
 
 		-
-			message: "#^Cannot call method getAttribute\\(\\) on DOMNode\\|null\\.$#"
+			message: "#^Cannot access property \\$length on DOMNodeList\\<DOMNode\\>\\|false\\.$#"
 			count: 1
 			path: lib/PicoFeed/Reader/Favicon.php
 
@@ -1503,11 +1348,6 @@ parameters:
 		-
 			message: "#^Cannot access property \\$documentElement on DOMDocument\\|true\\.$#"
 			count: 1
-			path: lib/PicoFeed/Scraper/CandidateParser.php
-
-		-
-			message: "#^Cannot call method removeChild\\(\\) on DOMNode\\|null\\.$#"
-			count: 2
 			path: lib/PicoFeed/Scraper/CandidateParser.php
 
 		-
@@ -1592,11 +1432,6 @@ parameters:
 
 		-
 			message: "#^Method PicoFeed\\\\Scraper\\\\RuleLoader\\:\\:loadRuleFile\\(\\) return type has no value type specified in iterable type array\\.$#"
-			count: 1
-			path: lib/PicoFeed/Scraper/RuleLoader.php
-
-		-
-			message: "#^Parameter \\#1 \\$hostname of method PicoFeed\\\\Scraper\\\\RuleLoader\\:\\:getRulesFileList\\(\\) expects string, string\\|null given\\.$#"
 			count: 1
 			path: lib/PicoFeed/Scraper/RuleLoader.php
 
@@ -1714,11 +1549,6 @@ parameters:
 			message: "#^Unsafe usage of new static\\(\\)\\.$#"
 			count: 1
 			path: lib/PicoFeed/Serialization/SubscriptionListBuilder.php
-
-		-
-			message: "#^Cannot access property \\$head on mixed\\.$#"
-			count: 1
-			path: lib/PicoFeed/Serialization/SubscriptionListParser.php
 
 		-
 			message: "#^Method PicoFeed\\\\Serialization\\\\SubscriptionListParser\\:\\:parseEntries\\(\\) has no return type specified\\.$#"
