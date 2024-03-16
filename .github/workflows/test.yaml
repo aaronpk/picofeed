@@ -46,8 +46,6 @@ jobs:
 
       - name: "Install dependencies"
         uses: "ramsey/composer-install@v3"
-        with:
-          working-directory: "app"
 
       - name: "Execute unit tests"
         run: "vendor/bin/phpunit --testdox"
