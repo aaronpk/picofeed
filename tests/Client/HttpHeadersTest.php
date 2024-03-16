@@ -2,9 +2,8 @@
 
 namespace PicoFeed\Client;
 
-use PHPUnit_Framework_TestCase;
 
-class HttpHeadersTest extends PHPUnit_Framework_TestCase
+class HttpHeadersTest extends \PHPUnit\Framework\TestCase
 {
     public function testHttpHeadersSet()
     {

@@ -2,9 +2,8 @@
 
 namespace PicoFeed\Serialization;
 
-use PHPUnit_Framework_TestCase;
 
-class SubscriptionListParserTest extends PHPUnit_Framework_TestCase
+class SubscriptionListParserTest extends \PHPUnit\Framework\TestCase
 {
     public function testMalFormedFormat()
     {
@@ -15,13 +14,12 @@ class SubscriptionListParserTest extends PHPUnit_Framework_TestCase
     public function testFormat()
     {
         $subscriptionList = SubscriptionListParser::create(file_get_contents('tests/fixtures/subscriptionList.opml'))->parse();
-
         $this->assertEquals('mySubscriptions.opml', $subscriptionList->getTitle());
         $this->assertCount(14, $subscriptionList->subscriptions);
         $this->assertEquals('CNET News.com', $subscriptionList->subscriptions[0]->getTitle());
         $this->assertEquals('http://news.com.com/2547-1_3-0-5.xml', $subscriptionList->subscriptions[0]->getFeedUrl());
         $this->assertEquals('http://news.com.com/', $subscriptionList->subscriptions[0]->getSiteUrl());
-        $this->assertEquals('rss', $subscriptionList->subscriptions[0]->getType());
+        $this->assertEquals('RSS2', $subscriptionList->subscriptions[0]->getType());
         $this->assertNotEmpty($subscriptionList->subscriptions[0]->getDescription());
     }
 

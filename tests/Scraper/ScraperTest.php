@@ -2,11 +2,10 @@
 
 namespace PicoFeed\Scraper;
 
-use PHPUnit_Framework_TestCase;
 use PicoFeed\Reader\Reader;
 use PicoFeed\Config\Config;
 
-class ScraperTest extends PHPUnit_Framework_TestCase
+class ScraperTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @group online

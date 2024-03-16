@@ -126,7 +126,7 @@ class SubscriptionParser
     protected function findType()
     {
         return isset($this->outlineElement['version']) ? (string) $this->outlineElement['version'] :
-            isset($this->outlineElement['type']) ? (string) $this->outlineElement['type'] : 'rss';
+            ( isset($this->outlineElement['type']) ? (string) $this->outlineElement['type'] : 'rss' );
     }
 
     /**

@@ -3,9 +3,8 @@
 namespace PicoFeed\Client;
 
 use DateTime;
-use PHPUnit_Framework_TestCase;
 
-class ClientTest extends PHPUnit_Framework_TestCase
+class ClientTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @group online
@@ -28,12 +27,17 @@ class ClientTest extends PHPUnit_Framework_TestCase
      */
     public function testPassthrough()
     {
-        $client = Client::getInstance();
-        $client->setUrl('https://miniflux.net/favicon.ico');
-        $client->enablePassthroughMode();
-        $client->execute();
 
-        $this->expectOutputString(file_get_contents('tests/fixtures/miniflux_favicon.ico'));
+        $client = Client::getInstance();
+        $client->setUrl('https://miniflux.app//favicon.ico');
+        $client->enablePassthroughMode();
+        ob_start();
+
+        $client->execute();
+        ob_end_clean();
+        $str = ob_get_contents();
+        ob_flush();
+        $this->assertEquals($str, file_get_contents('tests/fixtures/miniflux_favicon.ico'));
     }
 
     /**
@@ -42,12 +46,12 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function testCacheBothHaveToMatch()
     {
         $client = Client::getInstance();
-        $client->setUrl('http://php.net/robots.txt');
+        $client->setUrl('https://www.php.net/robots.txt');
         $client->execute();
         $etag = $client->getEtag();
 
         $client = Client::getInstance();
-        $client->setUrl('http://php.net/robots.txt');
+        $client->setUrl('https://www.php.net/robots.txt');
         $client->setEtag($etag);
         $client->execute();
 

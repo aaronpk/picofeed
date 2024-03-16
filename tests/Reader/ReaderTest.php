@@ -2,9 +2,8 @@
 
 namespace PicoFeed\Reader;
 
-use PHPUnit_Framework_TestCase;
 
-class ReaderTest extends PHPUnit_Framework_TestCase
+class ReaderTest extends \PHPUnit\Framework\TestCase
 {
     public function testPrependScheme()
     {
@@ -223,7 +222,7 @@ class ReaderTest extends PHPUnit_Framework_TestCase
     {
         $reader = new Reader();
         $client = $reader->discover('http://www.universfreebox.com/');
-        $this->assertEquals('http://www.universfreebox.com/backend.php', $client->getUrl());
+        $this->assertEquals('https://www.universfreebox.com/feed', $client->getUrl());
         $this->assertInstanceOf('PicoFeed\Parser\Rss20', $reader->getParser($client->getUrl(), $client->getContent(), $client->getEncoding()));
 
         $reader = new Reader();
